@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0%;
+            background-image:linear-gradient( to left, #F7BA48, #5845ED);
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        header > nav{
+            display: inline-block;
+            margin: 10px;
+            background-color: aliceblue;
+            box-shadow: inset 3px 2px 4px 5px rgba(0, 0, 0, 0.281);
+        }
+        nav > a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:active{
+            color: rgb(255, 255, 255);
+        }
+        header > nav > a:hover{
+            color: red;
+        }
+        main{
+            background-color: aliceblue;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+             border-radius: 10px 0px;
+             box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.329);
+        }
+        article > div> aside{
+            display: inline;
+            background-color: black;
+            color: white;
+            padding: 3px;
+        }
+        article> div > aside#especial{
+            background-color: blue;
+        }
+        div{
+            text-align: left;
+        }
+        footer{
+            display: block;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="https://gustavoguanabara.github.io/" target="_blank" rel="unfollow">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Noticia sobre bla</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam, rem omnis magni quibusdam quam nam vel ratione perferendis libero amet earum fugit hic, impedit error fuga praesentium, dolore inventore?</p>
+                        <div>
+                            <aside> artigo escrito por dokas
+                                        </article>
+                        </div>
+        </section>
+        <section>
+            <article>
+                <h2>Noticia sobre bla</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam, rem omnis magni quibusdam quam nam vel ratione perferendis libero amet earum fugit hic, impedit error fuga praesentium, dolore inventore?</p>
+                <div>
+                    <aside id="especial"> artigo escrito por dokas</aside>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em vídio</p>
+    </footer>
+</body>
+</html>
